@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Таблица </title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 10%;
+}
+
+th, td {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  padding:10px;
+}
+</style>
+</head>
+<body>
+
+<script language="JavaScript" type="text/JavaScript">
+  document.write("<table>"); 
+  document.write("<tr><th>Степень</th><th>Результат</th></tr>"); 
+
+  for (var i = 0; i <= 5; i++) {
+    var степень = 2;
+    var результат = Math.pow(степень, i); 
+
+    document.write("<tr>"); 
+    document.write("<td>2<sup>" + i + "</sup></td>");
+    document.write("<td>" + результат + "</td>"); 
+    document.write("</tr>"); 
+  }
+
+  document.write("</table>"); 
+</script>
+
+</body>
+</html>
